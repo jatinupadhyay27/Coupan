@@ -1,0 +1,184 @@
+.hidden {
+  display: block;
+}
+
+.hover-trigger:hover + .hover-content {
+  display: block;
+}
+.hidden:hover  {
+  display: block;
+}
+.trans  {
+    color: white !important;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.trans::after {
+    content: " ";
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: #d51c29;
+    transition: 0.5s ease-in-out;
+}
+
+.trans:hover:after {
+    width:100%;
+}
+
+.custom-class {
+    right: 8rem;
+  }
+  
+  @media (max-width: 320px) {
+    .custom-class {
+      right:18px;
+    }
+  }
+  @media (min-width:325px) and (max-width: 425px) {
+    .custom-class{
+      right: 64px;}
+  }
+  @media (min-width:426px) and (max-width: 770px) {
+    .custom-class{
+      right: 3rem;}
+  }
+
+  .custom-width {
+    width: 20vw;
+    right: 24rem;
+  }
+  @media screen and (max-width: 321px) {
+    .custom-width{
+      width: 40vw;
+    right: 6rem;
+    }
+  }
+  @media (min-width:321px) and (max-width: 426px) {
+    .custom-width{
+      width: 30vw;  
+      right: 1rem;
+    }
+  }
+  @media (min-width:426px) and (max-width: 768px) {
+    .custom-width{
+      width: 18vw;  
+      right: 11rem;
+    }
+  }
+  @media (min-width:770px) and (max-width: 1024px) {
+    .custom-width{
+      width: 15vw;  
+      right: 18rem;
+    }
+  }
+  
+.custom-width::-webkit-scrollbar {
+    width: 3px;
+  }
+   
+  .custom-width::-webkit-scrollbar-thumb {
+    background: #d51c29;
+    border-radius: 20px;
+  }
+  
+  .custom-width::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+  }
+  
+ 
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card-front {
+    border-radius: 10px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  
+  .btn {
+    padding: 8px 16px;
+    background-color: #fff; /* Tailwind's blue-600 */
+    color: #3b597b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 640px) {
+    .card {
+      width: 100%;
+      height: auto;
+    }
+    .card-inner {
+      height: 100%;
+    }
+  }
+
+  #style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+ height: 10px;
+	
+}
+@media screen and (max-width: 768px) {
+  #style-2::-webkit-scrollbar {
+   height: 6px;
+  }
+  
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background: linear-gradient(to left, #f7797d, #ff9a8b, #fbd786, #ff9a8b, #f7797d);
+
+}
+  
+
+.backgroundImage {
+  background: url('https://d3pzq99hz695o4.cloudfront.net/temporary/image/20240806054118-542286-944x2356.png');
+}
